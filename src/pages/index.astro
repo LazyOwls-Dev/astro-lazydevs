@@ -1,15 +1,37 @@
 ---
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro for lazy developers</h1>
-	</body>
-</html>
+<Layout>
+    <div class="container home-section">
+        <div class="home-left">
+            <h1>Astro<br />Template</h1>
+            <h2>Template that uses Astro with SCSS</h2>
+            <div class="flow">
+                <p>
+                    Astro template is a front-end framework that uses SCSS for
+                    simplified and customizable styling of web applications. It
+                    offers pre-built components and efficient management of
+                    large stylesheets, making it a popular choice for
+                    collaborative web development teams.
+                </p>
+                <p>
+                    In addition to its powerful styling capabilities, the Astro
+                    template also offers a range of features for building
+                    responsive and accessible web applications. This includes
+                    support for modern layout techniques such as flexbox and
+                    grid, as well as accessibility-focused features such as
+                    keyboard navigation and ARIA attributes. The template also
+                    integrates well with popular front-end libraries and
+                    frameworks such as React and Angular, making it a versatile
+                    option for a wide range of projects. Overall, the Astro
+                    template offers a robust and feature-rich solution for
+                    building high-quality web applications using SCSS.
+                </p>
+            </div>
+        </div>
+        <div class="home-right">
+            <img src="./images/Astronaut.svg" alt="astronaut" />
+        </div>
+    </div>
+</Layout>

@@ -1,0 +1,116 @@
+@use "../Util/index" as *;
+
+/* general */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1em);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1em);
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-space, 1rem);
+}
+
+.container {
+  margin-inline: auto;
+  max-width: min(rem(1440), calc(100% - 2rem));
+}
+
+/* for screen readers to hide content */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* colors */
+
+.bg-dark {
+  background-color: hsl(Var(--clr-bg));
+}
+
+.bg-accent {
+  background-color: hsl(Var(--clr-primary));
+}
+
+.bg-white {
+  background-color: hsl(Var(--clr-white));
+}
+
+.text-dark {
+  color: hsl(Var(--clr-bg));
+}
+
+.text-accent {
+  color: hsl(Var(--clr-primary));
+}
+
+.text-white {
+  color: hsl(Var(--clr-white));
+}
+
+/* typography */
+
+.ff-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.ff-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fs-900 {
+  font-size: $fs-900;
+  --tt-key: primary-headline;
+}
+
+.fs-800 {
+  font-size: $fs-800;
+  --tt-key: primary-subheadline;
+}
+
+.fs-700 {
+  font-size: $fs-700;
+  --tt-key: section-headline;
+}
+
+.fs-600 {
+  font-size: $fs-600;
+  --tt-key: section-subheadline;
+}
+
+.fs-500 {
+  font-size: $fs-500;
+  --tt-key: section-label;
+}
+
+.fs-400 {
+  font-size: $fs-400;
+  --tt-key: big-paragraph;
+}
+
+.fs-300 {
+  font-size: $fs-300;
+  --tt-key: small-paragraph;
+}
+
+.fs-200 {
+  font-size: $fs-200;
+  --tt-key: caption;
+}

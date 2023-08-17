@@ -1,0 +1,52 @@
+@use "../Util/index" as *;
+
+.home-section {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.home-left {
+    width: 50%;
+
+    h1 {
+        font-weight: 900;
+        font-size: rem(88);
+    }
+
+    h2 {
+        font-size: rem(36);
+        margin-bottom: em(20, 36);
+    }
+}
+
+.home-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 50%;
+        position: relative;
+        animation: astroAni 5s ease infinite;
+    }
+}
+
+@keyframes astroAni {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
